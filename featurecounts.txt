@@ -1,0 +1,259 @@
+﻿(base) kampo314@kampo314-Vostro-3020-SFF:~/Tohoku-COI/sorted$ featureCounts -p -t exon -g gene_id -a /home/kampo314/240712RAP.gtf -o counts.txt *.bam -T 20
+
+        ==========     _____ _    _ ____  _____  ______          _____  
+        =====         / ____| |  | |  _ \|  __ \|  ____|   /\   |  __ \ 
+          =====      | (___ | |  | | |_) | |__) | |__     /  \  | |  | |
+            ====      \___ \| |  | |  _ <|  _  /|  __|   / /\ \ | |  | |
+              ====    ____) | |__| | |_) | | \ \| |____ / ____ \| |__| |
+        ==========   |_____/ \____/|____/|_|  \_\______/_/    \_\_____/
+	  v2.0.6
+
+//========================== featureCounts setting ===========================\\
+||                                                                            ||
+||             Input files : 27 BAM files                                     ||
+||                                                                            ||
+||                           coi2CFA-Ile1_m_sorted.bam                        ||
+||                           coi2CFA-Ile2_m_sorted.bam                        ||
+||                           coi2CFA-Ile3_m_sorted.bam                        ||
+||                           coi2MeJA1_m_sorted.bam                           ||
+||                           coi2MeJA2_m_sorted.bam                           ||
+||                           coi2MeJA3_m_sorted.bam                           ||
+||                           coi2Mock1_m_sorted.bam                           ||
+||                           coi2Mock2_m_sorted.bam                           ||
+||                           coi2Mock3_m_sorted.bam                           ||
+||                           coiabCFA-Ile1_m_sorted.bam                       ||
+||                           coiabCFA-Ile2_m_sorted.bam                       ||
+||                           coiabCFA-Ile3_m_sorted.bam                       ||
+||                           coiabMeJA1_m_sorted.bam                          ||
+||                           coiabMeJA2_m_sorted.bam                          ||
+||                           coiabMeJA3_m_sorted.bam                          ||
+||                           coiabMock1_m_sorted.bam                          ||
+||                           coiabMock2_m_sorted.bam                          ||
+||                           coiabMock3_m_sorted.bam                          ||
+||                           WTCFA-Ile1_m_sorted.bam                          ||
+||                           WTCFA-Ile2_m_sorted.bam                          ||
+||                           WTCFA-Ile3_m_sorted.bam                          ||
+||                           WTMeJA1_m_sorted.bam                             ||
+||                           WTMeJA2_m_sorted.bam                             ||
+||                           WTMeJA3_m_sorted.bam                             ||
+||                           WTMock1_m_sorted.bam                             ||
+||                           WTMock2_m_sorted.bam                             ||
+||                           WTMock3_m_sorted.bam                             ||
+||                                                                            ||
+||             Output file : counts.txt                                       ||
+||                 Summary : counts.txt.summary                               ||
+||              Paired-end : yes                                              ||
+||        Count read pairs : no                                               ||
+||              Annotation : 240712RAP.gtf (GTF)                              ||
+||      Dir for temp files : ./                                               ||
+||                                                                            ||
+||                 Threads : 20                                               ||
+||                   Level : meta-feature level                               ||
+||      Multimapping reads : not counted                                      ||
+|| Multi-overlapping reads : not counted                                      ||
+||   Min overlapping bases : 1                                                ||
+||                                                                            ||
+\\============================================================================//
+
+//================================= Running ==================================\\
+||                                                                            ||
+|| Load annotation file 240712RAP.gtf ...                                     ||
+||    Features : 203779                                                       ||
+||    Meta-features : 37861                                                   ||
+||    Chromosomes/contigs : 12                                                ||
+||                                                                            ||
+|| Process BAM file coi2CFA-Ile1_m_sorted.bam...                              ||
+||    Paired-end reads are included.                                          ||
+||    The reads are assigned on the single-end mode.                          ||
+||    Total alignments : 57432586                                             ||
+||    Successfully assigned alignments : 43759293 (76.2%)                     ||
+||    Running time : 0.07 minutes                                             ||
+||                                                                            ||
+|| Process BAM file coi2CFA-Ile2_m_sorted.bam...                              ||
+||    Paired-end reads are included.                                          ||
+||    The reads are assigned on the single-end mode.                          ||
+||    Total alignments : 66534828                                             ||
+||    Successfully assigned alignments : 50821496 (76.4%)                     ||
+||    Running time : 0.08 minutes                                             ||
+||                                                                            ||
+|| Process BAM file coi2CFA-Ile3_m_sorted.bam...                              ||
+||    Paired-end reads are included.                                          ||
+||    The reads are assigned on the single-end mode.                          ||
+||    Total alignments : 76100340                                             ||
+||    Successfully assigned alignments : 57541917 (75.6%)                     ||
+||    Running time : 0.10 minutes                                             ||
+||                                                                            ||
+|| Process BAM file coi2MeJA1_m_sorted.bam...                                 ||
+||    Paired-end reads are included.                                          ||
+||    The reads are assigned on the single-end mode.                          ||
+||    Total alignments : 74306554                                             ||
+||    Successfully assigned alignments : 56853875 (76.5%)                     ||
+||    Running time : 0.10 minutes                                             ||
+||                                                                            ||
+|| Process BAM file coi2MeJA2_m_sorted.bam...                                 ||
+||    Paired-end reads are included.                                          ||
+||    The reads are assigned on the single-end mode.                          ||
+||    Total alignments : 91713118                                             ||
+||    Successfully assigned alignments : 70201202 (76.5%)                     ||
+||    Running time : 0.12 minutes                                             ||
+||                                                                            ||
+|| Process BAM file coi2MeJA3_m_sorted.bam...                                 ||
+||    Paired-end reads are included.                                          ||
+||    The reads are assigned on the single-end mode.                          ||
+||    Total alignments : 75070358                                             ||
+||    Successfully assigned alignments : 57352867 (76.4%)                     ||
+||    Running time : 0.11 minutes                                             ||
+||                                                                            ||
+|| Process BAM file coi2Mock1_m_sorted.bam...                                 ||
+||    Paired-end reads are included.                                          ||
+||    The reads are assigned on the single-end mode.                          ||
+||    Total alignments : 83055794                                             ||
+||    Successfully assigned alignments : 62744411 (75.5%)                     ||
+||    Running time : 0.13 minutes                                             ||
+||                                                                            ||
+|| Process BAM file coi2Mock2_m_sorted.bam...                                 ||
+||    Paired-end reads are included.                                          ||
+||    The reads are assigned on the single-end mode.                          ||
+||    Total alignments : 62299874                                             ||
+||    Successfully assigned alignments : 47171635 (75.7%)                     ||
+||    Running time : 0.10 minutes                                             ||
+||                                                                            ||
+|| Process BAM file coi2Mock3_m_sorted.bam...                                 ||
+||    Paired-end reads are included.                                          ||
+||    The reads are assigned on the single-end mode.                          ||
+||    Total alignments : 58216044                                             ||
+||    Successfully assigned alignments : 44216036 (76.0%)                     ||
+||    Running time : 0.09 minutes                                             ||
+||                                                                            ||
+|| Process BAM file coiabCFA-Ile1_m_sorted.bam...                             ||
+||    Paired-end reads are included.                                          ||
+||    The reads are assigned on the single-end mode.                          ||
+||    Total alignments : 73204242                                             ||
+||    Successfully assigned alignments : 55842064 (76.3%)                     ||
+||    Running time : 0.11 minutes                                             ||
+||                                                                            ||
+|| Process BAM file coiabCFA-Ile2_m_sorted.bam...                             ||
+||    Paired-end reads are included.                                          ||
+||    The reads are assigned on the single-end mode.                          ||
+||    Total alignments : 113178790                                            ||
+||    Successfully assigned alignments : 86671399 (76.6%)                     ||
+||    Running time : 0.17 minutes                                             ||
+||                                                                            ||
+|| Process BAM file coiabCFA-Ile3_m_sorted.bam...                             ||
+||    Paired-end reads are included.                                          ||
+||    The reads are assigned on the single-end mode.                          ||
+||    Total alignments : 76261142                                             ||
+||    Successfully assigned alignments : 58647949 (76.9%)                     ||
+||    Running time : 0.12 minutes                                             ||
+||                                                                            ||
+|| Process BAM file coiabMeJA1_m_sorted.bam...                                ||
+||    Paired-end reads are included.                                          ||
+||    The reads are assigned on the single-end mode.                          ||
+||    Total alignments : 59938132                                             ||
+||    Successfully assigned alignments : 45658841 (76.2%)                     ||
+||    Running time : 0.09 minutes                                             ||
+||                                                                            ||
+|| Process BAM file coiabMeJA2_m_sorted.bam...                                ||
+||    Paired-end reads are included.                                          ||
+||    The reads are assigned on the single-end mode.                          ||
+||    Total alignments : 80767414                                             ||
+||    Successfully assigned alignments : 61798424 (76.5%)                     ||
+||    Running time : 0.12 minutes                                             ||
+||                                                                            ||
+|| Process BAM file coiabMeJA3_m_sorted.bam...                                ||
+||    Paired-end reads are included.                                          ||
+||    The reads are assigned on the single-end mode.                          ||
+||    Total alignments : 102899250                                            ||
+||    Successfully assigned alignments : 79227170 (77.0%)                     ||
+||    Running time : 0.16 minutes                                             ||
+||                                                                            ||
+|| Process BAM file coiabMock1_m_sorted.bam...                                ||
+||    Paired-end reads are included.                                          ||
+||    The reads are assigned on the single-end mode.                          ||
+||    Total alignments : 82016192                                             ||
+||    Successfully assigned alignments : 62224659 (75.9%)                     ||
+||    Running time : 0.13 minutes                                             ||
+||                                                                            ||
+|| Process BAM file coiabMock2_m_sorted.bam...                                ||
+||    Paired-end reads are included.                                          ||
+||    The reads are assigned on the single-end mode.                          ||
+||    Total alignments : 76475634                                             ||
+||    Successfully assigned alignments : 58003070 (75.8%)                     ||
+||    Running time : 0.12 minutes                                             ||
+||                                                                            ||
+|| Process BAM file coiabMock3_m_sorted.bam...                                ||
+||    Paired-end reads are included.                                          ||
+||    The reads are assigned on the single-end mode.                          ||
+||    Total alignments : 83969244                                             ||
+||    Successfully assigned alignments : 64005693 (76.2%)                     ||
+||    Running time : 0.13 minutes                                             ||
+||                                                                            ||
+|| Process BAM file WTCFA-Ile1_m_sorted.bam...                                ||
+||    Paired-end reads are included.                                          ||
+||    The reads are assigned on the single-end mode.                          ||
+||    Total alignments : 63318124                                             ||
+||    Successfully assigned alignments : 48298974 (76.3%)                     ||
+||    Running time : 0.10 minutes                                             ||
+||                                                                            ||
+|| Process BAM file WTCFA-Ile2_m_sorted.bam...                                ||
+||    Paired-end reads are included.                                          ||
+||    The reads are assigned on the single-end mode.                          ||
+||    Total alignments : 99603702                                             ||
+||    Successfully assigned alignments : 75743113 (76.0%)                     ||
+||    Running time : 0.15 minutes                                             ||
+||                                                                            ||
+|| Process BAM file WTCFA-Ile3_m_sorted.bam...                                ||
+||    Paired-end reads are included.                                          ||
+||    The reads are assigned on the single-end mode.                          ||
+||    Total alignments : 66973204                                             ||
+||    Successfully assigned alignments : 51354191 (76.7%)                     ||
+||    Running time : 0.10 minutes                                             ||
+||                                                                            ||
+|| Process BAM file WTMeJA1_m_sorted.bam...                                   ||
+||    Paired-end reads are included.                                          ||
+||    The reads are assigned on the single-end mode.                          ||
+||    Total alignments : 80459680                                             ||
+||    Successfully assigned alignments : 60984155 (75.8%)                     ||
+||    Running time : 0.13 minutes                                             ||
+||                                                                            ||
+|| Process BAM file WTMeJA2_m_sorted.bam...                                   ||
+||    Paired-end reads are included.                                          ||
+||    The reads are assigned on the single-end mode.                          ||
+||    Total alignments : 67627394                                             ||
+||    Successfully assigned alignments : 51459360 (76.1%)                     ||
+||    Running time : 0.10 minutes                                             ||
+||                                                                            ||
+|| Process BAM file WTMeJA3_m_sorted.bam...                                   ||
+||    Paired-end reads are included.                                          ||
+||    The reads are assigned on the single-end mode.                          ||
+||    Total alignments : 67194088                                             ||
+||    Successfully assigned alignments : 51275667 (76.3%)                     ||
+||    Running time : 0.10 minutes                                             ||
+||                                                                            ||
+|| Process BAM file WTMock1_m_sorted.bam...                                   ||
+||    Paired-end reads are included.                                          ||
+||    The reads are assigned on the single-end mode.                          ||
+||    Total alignments : 74626632                                             ||
+||    Successfully assigned alignments : 56882034 (76.2%)                     ||
+||    Running time : 0.12 minutes                                             ||
+||                                                                            ||
+|| Process BAM file WTMock2_m_sorted.bam...                                   ||
+||    Paired-end reads are included.                                          ||
+||    The reads are assigned on the single-end mode.                          ||
+||    Total alignments : 64817652                                             ||
+||    Successfully assigned alignments : 49120745 (75.8%)                     ||
+||    Running time : 0.10 minutes                                             ||
+||                                                                            ||
+|| Process BAM file WTMock3_m_sorted.bam...                                   ||
+||    Paired-end reads are included.                                          ||
+||    The reads are assigned on the single-end mode.                          ||
+||    Total alignments : 86182828                                             ||
+||    Successfully assigned alignments : 65434782 (75.9%)                     ||
+||    Running time : 0.13 minutes                                             ||
+||                                                                            ||
+|| Write the final count table.                                               ||
+|| Write the read assignment summary.                                         ||
+||                                                                            ||
+|| Summary of counting results can be found in file "counts.txt.summary"      ||
+||                                                                            ||
+\\============================================================================//
